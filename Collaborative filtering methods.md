@@ -1,4 +1,6 @@
-# Collaborative filtering methods
+[[Recommendation System]]
+
+## Collaborative filtering methods
 user-item interactions matrix
 - system uses past interactions to sugest new recommendations
 - predictions on estimated proximities between users and/or items
@@ -19,23 +21,6 @@ Collaborative filterings are divided in two categories:
 
 2) Model based approaches
 - recommendations learned from interaction matrix
-
-## 1) Memory based
-Works directly with past data, doesnt assume model. 
-- ==Nearest neighbours search==
-- large sparce vectors
-ex = find closest users and sugest its popular items
-- since it doesn't have a model, it uses only past interactions between users/items, it theoretically has a low bias (no model) and a high variance.
-
-
-## 2)Model based approaches
-tries to model a ==generative model on user-item interactions== to make new predictions.
-small dense vectors
-ex: matrix factorisation
-- it has a latent model, so, theoretically it has a bigger bias (model per se)  and a lower variance
-
-> The users and items latent representations extracted by the model have a mathematical meaning that can be hard to interpret for a human being. 
-\- Towards Data Science
 
 
 
